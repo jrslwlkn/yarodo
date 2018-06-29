@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>YARODO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+</head>
+
+<body>
+
+  <style>
+    li label span {
+      color: black;
+    }
+
+    .complete {
+      color: grey;
+      text-decoration: line-through;
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 push-m2">
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title">
+              YaroDO, a simple to-do list
+            </span>
+            <span class="card-subtitle">
+              that remembers your tasks. Reload the page to try!
+            </span>
+            <div class="row">
+              <form id="todo-form">
+                <div class="input-field col">
+                  <input type="text" name="todo" id="todo">
+                  <label for="todo">Add an item</label>
+                </div>
+                <br>
+                <input type="submit" value="Add to the list" class="btn">
+                <br>
+                <br>
+                <p class="card-content">Total todos:
+                  <span class="total">0</span>
+                </p>
+                <p class="card-content">Remaining todos:
+                  <span class="remaining">0</span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card todos">
+          <ul class="todos-list collection">
+            <li class="collection-item clearall">
+              <input type="submit" value="Clear all" class="clear btn grey">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="todo.js"></script>
+</body>
+
+</html>
